@@ -13,7 +13,7 @@ h1 {
 /* HOME PAGE */
 /*  */
 
-#left-header {
+#left-header-links {
   height: 25vh;
   justify-content: center;
   display: flex;
@@ -22,7 +22,7 @@ h1 {
   font-size: 12px;
 }
 
-#right-header {
+#right-header-links {
   height: 40vh;
   justify-content: space-between;
   display: flex;
@@ -46,15 +46,25 @@ nav.navigation-bar {
   align-items: center;
 }
 
-#home-container {
-  margin: 0;
-  display: block;
+div.menu-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 48px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
-#main-photo-home {
+/* #home-container {
+  margin: 0;
+  display: block;
+} */
+
+#main-photo-div {
   height: 60vh;
   width: 100vw;
-  margin: 0;
   display: block;
 }
 
@@ -63,9 +73,10 @@ nav.navigation-bar {
   height: 100%;
   object-fit: cover;
   object-position: center;
+  /* border-radius: 40% 40% / 0% 0%; */
 }
 
-.home-content-container {
+.home-content {
   height: 40vh;
   display: flex;
   flex-direction: column;
@@ -73,6 +84,8 @@ nav.navigation-bar {
   text-align: center;
   margin: 0;
 }
+
+/* BURGER MENU */
 
 /* .about-container {
   border-color: #f9ff60;
@@ -107,25 +120,26 @@ button:hover {
   font-size: 12px;
 }
 
+/*  */
 /* MEDIA QUERIES */
+/*  */
+
+/* Min-Width 550PX */
 
 @media screen and (min-width: 550px) {
-  #left-header,
-  #right-header {
+  #left-header-links,
+  #right-header-links {
     display: flex;
     flex-direction: row;
     align-items: center;
   }
-}
-
-@media screen and (min-width: 550px) {
-  #right-header {
+  #right-header-links {
+    padding-left: 380px;
+  }
+  #left-header-links {
     width: 50vw;
     justify-content: space-around;
   }
-}
-
-@media screen and (min-width: 550px) {
   nav.navigation-bar {
     position: absolute;
     top: 0;
@@ -137,6 +151,30 @@ button:hover {
     justify-content: space-between;
     align-items: center;
   }
+  div.menu-icon {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  #home-content {
+    height: 30vh;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    margin-left: 24px;
+  }
+  #main-photo-div {
+    max-width: 50vw;
+    min-width: 50vw;
+    flex-grow: 1;
+    flex-basis: 0;
+    height: 100vh;
+  }
+
+  /* #my-photo {
+    width: 70vw;
+  } */
 }
 
 @media screen and (min-width: 900px) {
@@ -145,18 +183,16 @@ button:hover {
     display: flex;
     flex-flow: row-reverse;
   }
-}
-
-@media screen and (min-width: 550px) {
-  #main-photo-home {
-    flex-grow: 1;
-    flex-basis: 0;
+  #home-content {
     height: 100vh;
     max-width: 50vw;
     min-width: 50vw;
-  }
-
-  #my-photo {
-    width: 100vw;
+    padding-left: 64px;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+    align-items: flex-start;
+    justify-content: flex-end;
   }
 }
