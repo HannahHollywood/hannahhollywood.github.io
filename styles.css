@@ -1,5 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 
 h1 {
@@ -32,20 +33,18 @@ h1 {
 
 nav.navigation-bar {
   display: none;
-  margin: 0;
 }
 
-/* .navigation-bar {
-  height: 50px;
-  overflow: hidden;
-  position: fixed;
+#burger-menu {
+  position: absolute;
   top: 0;
-  z-index: 300;
-  width: 100%;
+  left: 0;
+  width: 100vw;
+  height: 48px;
   display: flex;
-  justify-content: space-between;
-  font-size: 24px;
-} */
+  justify-content: flex-end;
+  align-items: center;
+}
 
 #home-container {
   margin: 0;
@@ -66,20 +65,24 @@ nav.navigation-bar {
   object-position: center;
 }
 
-.about-container {
+.home-content-container {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+}
+
+/* .about-container {
   border-color: #f9ff60;
   border-radius: 10px;
   max-width: 600px;
   margin: 0 auto;
   padding: 15px 60px;
-}
+} */
 
-.highlight {
-  color: #ff4533;
-  font-weight: bold;
-}
-
-button {
+/* button {
   display: block;
   margin: 20px auto;
   background: #ff8e00;
@@ -97,9 +100,63 @@ button:hover {
   background: #ffff;
   color: #ff8e00;
   border: #ff8e00;
-}
+} */
 
 .footer {
   text-align: center;
   font-size: 12px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 550px) {
+  #left-header,
+  #right-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  #right-header {
+    width: 50vw;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  nav.navigation-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 48px;
+    padding-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #home-container {
+    height: 100vh;
+    display: flex;
+    flex-flow: row-reverse;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  #main-photo-home {
+    flex-grow: 1;
+    flex-basis: 0;
+    height: 100vh;
+    max-width: 50vw;
+    min-width: 50vw;
+  }
+
+  #my-photo {
+    width: 100vw;
+  }
 }
