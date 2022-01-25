@@ -57,10 +57,10 @@ div.menu-icon {
   align-items: center;
 }
 
-/* #home-container {
+#home-container {
   margin: 0;
   display: block;
-} */
+}
 
 #main-photo-div {
   height: 60vh;
@@ -73,7 +73,7 @@ div.menu-icon {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  /* border-radius: 40% 40% / 0% 0%; */
+  border-radius: 25px;
 }
 
 .home-content {
