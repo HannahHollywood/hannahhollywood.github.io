@@ -3,12 +3,6 @@ body {
   margin: 0;
 }
 
-/* h1 { << might not be required
-  text-align: center;
-  font-weight: bold;
-  margin: 10px 0 10px 0;
-} */
-
 /*  */
 /* HOME PAGE */
 /* Navigation Stylings */
@@ -78,7 +72,7 @@ div.menu-icon {
 #home-content h1 {
   margin: 0;
   position: absolute;
-  top: calc(60vh - 60px);
+  top: calc(72vh - 70px);
   width: 100vw;
   font-weight: 900;
   text-align: center;
@@ -93,6 +87,9 @@ div.menu-icon {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  position: inherit;
+  margin-top: 100px;
+  text-align: center;
 }
 
 #main-photo-div {
@@ -148,8 +145,16 @@ button:hover {
 /* MEDIA QUERIES */
 /*  */
 
+/* Min-Width 480px for Home Content */
+@media (max-width: 480px) {
+  #main-photo-div {
+    position: absolute;
+    width: fit-content;
+  }
+}
+
 /* Min-Width 550px for Navigation */
-@media screen and (min-width: 550px) {
+@media (min-width: 550px) {
   #left-header-links,
   #right-header-links {
     display: flex;
@@ -157,7 +162,7 @@ button:hover {
     align-items: center;
   }
   #right-header-links {
-    padding-left: 380px;
+    padding-left: 20px;
   }
   #left-header-links {
     width: 50vw;
@@ -167,7 +172,7 @@ button:hover {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: fit-content;
     height: 48px;
     padding-top: 12px;
     display: flex;
@@ -180,43 +185,53 @@ button:hover {
 }
 
 /* Min-Width 550px for Home Content */
-@media screen and (min-width: 550px) {
+@media (min-width: 550px) {
   #home-content {
     height: 30vh;
-    flex-direction: row;
+    width: min-content;
+    flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    margin-left: 24px;
+    margin-left: 20px;
   }
   #home-content h1 {
     position: unset;
     width: auto;
+    margin-left: 36px;
     margin-right: 36px;
     line-height: normal;
   }
   #home-summary-text {
-    justify-content: flex-end;
+    justify-content: flex-start;
+    margin: initial;
     margin-bottom: 40px;
     max-height: unset;
-    text-align: left;
+    text-align: center;
   }
   #home-summary-text p {
     max-width: 450px;
     margin: 12px 0;
     font-weight: normal;
-    text-align: left;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 58px;
+    margin-top: -10px;
   }
   #main-photo-div {
-    max-width: 50vw;
-    min-width: 50vw;
+    height: 90%;
+    width: 60%;
     flex-grow: 1;
     flex-basis: 0;
     height: 70vh;
     justify-content: center;
   }
+  #my-photo {
+    width: fit-content;
+  }
 }
 
-@media screen and (min-width: 900px) {
+/* Min-Width 900px for Home Content */
+@media (min-width: 900px) {
   #home-container {
     height: 100vh;
     display: flex;
@@ -239,5 +254,16 @@ button:hover {
     height: 100vh;
     max-width: 50vw;
     min-width: 50vw;
+  }
+}
+
+@media (min-width: 1020px) {
+  #home-content h1 {
+    margin-left: calc(8vw + 12px);
+    justify-content: flex-start;
+  }
+  #home-summary-text {
+    margin-left: calc(4vw + 12px);
+    justify-content: flex-start;
   }
 }
