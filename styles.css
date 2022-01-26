@@ -3,14 +3,15 @@ body {
   margin: 0;
 }
 
-h1 {
+/* h1 { << might not be required
   text-align: center;
   font-weight: bold;
   margin: 10px 0 10px 0;
-}
+} */
 
 /*  */
 /* HOME PAGE */
+/* Navigation Stylings */
 /*  */
 
 #left-header-links {
@@ -57,9 +58,41 @@ div.menu-icon {
   align-items: center;
 }
 
+/*  */
+/* Home Page Container Stylings */
+/*  */
+
 #home-container {
   margin: 0;
   display: block;
+}
+
+#home-content {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+#home-content h1 {
+  margin: 0;
+  position: absolute;
+  top: calc(60vh - 60px);
+  width: 100vw;
+  font-weight: 900;
+  text-align: center;
+  font-size: 124px;
+  color: #212121;
+  line-height: 120px;
+}
+
+#home-summary-text {
+  height: 35vh;
+  max-height: 230px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 #main-photo-div {
@@ -73,16 +106,7 @@ div.menu-icon {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  border-radius: 25px;
-}
-
-.home-content {
-  height: 40vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  margin: 0;
+  border-radius: 50%;
 }
 
 /* BURGER MENU */
@@ -124,8 +148,7 @@ button:hover {
 /* MEDIA QUERIES */
 /*  */
 
-/* Min-Width 550PX */
-
+/* Min-Width 550px for Navigation */
 @media screen and (min-width: 550px) {
   #left-header-links,
   #right-header-links {
@@ -156,6 +179,7 @@ button:hover {
   }
 }
 
+/* Min-Width 550px for Home Content */
 @media screen and (min-width: 550px) {
   #home-content {
     height: 30vh;
@@ -164,17 +188,32 @@ button:hover {
     justify-content: center;
     margin-left: 24px;
   }
+  #home-content h1 {
+    position: unset;
+    width: auto;
+    margin-right: 36px;
+    line-height: normal;
+  }
+  #home-summary-text {
+    justify-content: flex-end;
+    margin-bottom: 40px;
+    max-height: unset;
+    text-align: left;
+  }
+  #home-summary-text p {
+    max-width: 450px;
+    margin: 12px 0;
+    font-weight: normal;
+    text-align: left;
+  }
   #main-photo-div {
     max-width: 50vw;
     min-width: 50vw;
     flex-grow: 1;
     flex-basis: 0;
-    height: 100vh;
+    height: 70vh;
+    justify-content: center;
   }
-
-  /* #my-photo {
-    width: 70vw;
-  } */
 }
 
 @media screen and (min-width: 900px) {
@@ -191,8 +230,14 @@ button:hover {
     flex-direction: column;
     flex-grow: 1;
     flex-basis: 0;
-    text-align: center;
     align-items: flex-start;
     justify-content: flex-end;
+  }
+  #main-photo-div {
+    flex-grow: 1;
+    flex-basis: 0;
+    height: 100vh;
+    max-width: 50vw;
+    min-width: 50vw;
   }
 }
