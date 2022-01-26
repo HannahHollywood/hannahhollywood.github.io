@@ -17,15 +17,6 @@ body {
   font-size: 12px;
 }
 
-#right-header-links {
-  height: 40vh;
-  justify-content: space-between;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 12px;
-}
-
 nav.navigation-bar {
   display: none;
 }
@@ -139,6 +130,25 @@ button:hover {
 .footer {
   text-align: center;
   font-size: 12px;
+  line-height: 1.5;
+}
+
+.social-links {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+}
+#github {
+  color: #161b22;
+}
+#linkedin {
+  color: #0966c2;
+}
+#stack-overflow {
+  color: #f48024;
+}
+#instagram {
+  color: #e01038;
 }
 
 /*  */
@@ -155,14 +165,10 @@ button:hover {
 
 /* Min-Width 550px for Navigation */
 @media (min-width: 550px) {
-  #left-header-links,
-  #right-header-links {
+  #left-header-links {
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
-  #right-header-links {
-    padding-left: 20px;
   }
   #left-header-links {
     width: 50vw;
