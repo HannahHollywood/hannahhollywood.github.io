@@ -1,5 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #fdf6ff;
   margin: 0;
 }
 
@@ -8,39 +9,47 @@ body {
 /* Navigation Stylings */
 /*  */
 
-#left-header-links {
+.left-header-links {
   height: 25vh;
   justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 12px;
+}
+
+#links {
+  text-decoration: none;
+  font-family: "Twinkle Star", cursive;
+  color: #f6543c;
+  font-size: 20px;
 }
 
 nav.navigation-bar {
   display: none;
 }
 
-#burger-menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 48px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+/* Homepage Buttons */
+button {
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  position: relative;
+  color: #000;
+  background: #fff;
+  line-height: 30px;
+  border-radius: 15px;
+  padding: 20px;
+  font-weight: 600;
+  box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px,
+    rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+  transition: all 0.2s;
+  font-size: 20px;
 }
 
-div.menu-icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 48px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+#links:hover {
+  transform: scale(1.01);
+  color: #438dff;
 }
 
 /*  */
@@ -81,13 +90,14 @@ div.menu-icon {
   position: inherit;
   margin-top: 100px;
   text-align: center;
+  font-size: 20px;
 }
 
 #home-summary-text h2 {
+  font-size: 30px;
   font-family: "Twinkle Star", cursive;
   color: #f6543c;
 }
-
 /* Cursor */
 .txt-type > .txt {
   border-right: 0.2rem solid #777;
@@ -106,35 +116,32 @@ div.menu-icon {
   object-position: center;
   border-radius: 50%;
 }
-
-/* BURGER MENU */
-
-/* .about-container {
-  border-color: #f9ff60;
-  border-radius: 10px;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 15px 60px;
-} */
-
-/* button {
-  display: block;
-  margin: 20px auto;
-  background: #ff8e00;
-  color: #ffff;
-  font-size: 18px;
-  padding: 15px 20px;
-  border: #ff8e00;
-  border-radius: 6px;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
-  transition: all 200ms ease-in-out;
-  cursor: pointer;
+#my-photo:hover {
+  box-shadow: rgb(246, 84, 174) -2px -2px 0px 2px,
+    rgb(255, 198, 0) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
 }
 
-button:hover {
-  background: #ffff;
-  color: #ff8e00;
-  border: #ff8e00;
+/* BURGER MENU */
+/* #burger-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 48px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+div.menu-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 48px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 } */
 
 .footer {
@@ -179,12 +186,10 @@ button:hover {
 
 /* Min-Width 550px for Navigation */
 @media (min-width: 550px) {
-  #left-header-links {
+  .left-header-links {
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
-  #left-header-links {
     width: 50vw;
     justify-content: space-around;
   }
@@ -277,6 +282,7 @@ button:hover {
   }
 }
 
+/* Min-Width 1020px for Home Content */
 @media (min-width: 1020px) {
   #home-content h1 {
     margin-left: calc(8vw + 12px);

@@ -1,4 +1,4 @@
-// Typewriter Effect (https://www.youtube.com/watch?v=POX3dT-pB4E) //
+// Typewriter Effect Inspired by: (https://www.youtube.com/watch?v=POX3dT-pB4E) //
 
 const TypeWriter = function(txtElement, words, wait = 3000) {
     this.txtElement = txtElement;
@@ -47,7 +47,7 @@ TypeWriter.prototype.type = function() {
         // Move to the next word
         this.wordIndex++;
         // Pause before typing again
-        typeSpeed = 500;
+        typeSpeed = 300;
     }
 
     setTimeout(() => this.type(), typeSpeed);
