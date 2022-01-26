@@ -68,7 +68,7 @@ div.menu-icon {
   font-weight: 900;
   text-align: center;
   font-size: 124px;
-  color: #212121;
+  color: #438dff;
   line-height: 120px;
 }
 
@@ -81,6 +81,16 @@ div.menu-icon {
   position: inherit;
   margin-top: 100px;
   text-align: center;
+}
+
+#home-summary-text h2 {
+  font-family: "Twinkle Star", cursive;
+  color: #f6543c;
+}
+
+/* Cursor */
+.txt-type > .txt {
+  border-right: 0.2rem solid #777;
 }
 
 #main-photo-div {
@@ -129,14 +139,18 @@ button:hover {
 
 .footer {
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
+  font-family: "Twinkle Star", cursive;
+  font-weight: normal;
   line-height: 1.5;
+  align-items: center;
 }
 
 .social-links {
   text-align: center;
   font-size: 30px;
   font-weight: 900;
+  align-items: center;
 }
 #github {
   color: #161b22;

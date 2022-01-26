@@ -6,6 +6,15 @@
     <meta name="description" content="Hannah's Portfolio" />
     <meta name="author" content="Hannah-Beth" />
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <!-- FONTS: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap"
+      rel="stylesheet"
+    />
+    <!-- LOGOS: -->
     <script
       src="https://kit.fontawesome.com/3f058f03c7.js"
       crossorigin="anonymous"
@@ -23,13 +32,13 @@
           <div id="left-header-links">
             <a href="about.html">Learn More</a>
             <a href="projects.html">Projects</a>
-            <a href="contact-form.html">Contact Me!</a>
+            <a href="contact-form.html">Contact Me</a>
           </div>
         </div>
 
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
           <i class="fa fa-bars"></i>
-        </a>
+        </a> -->
       </nav>
     </header>
 
@@ -45,7 +54,13 @@
       <div id="home-content">
         <h1>Hello!</h1>
         <div id="home-summary-text">
-          <h2>I'm Hannah-Beth :)</h2>
+          <h2>
+            <span
+              class="txt-type"
+              data-wait="3000"
+              data-words='["I&#39m Hannah-Beth :)"]'
+            ></span>
+          </h2>
           <p>
             I'm studying to become a Full Stack Developer! Take a look at what
             I'm working on...
@@ -55,26 +70,30 @@
     </div>
 
     <footer class="footer">
-      Want to know what I'm up to? Follow me....
+      Like what you see? Follow me....
       <div class="social-links">
-        <a id="github" href="https://github.com/HannahHollywood"
+        <a id="github" href="https://github.com/HannahHollywood" target="_blank"
           ><i class="fab fa-github"></i
         ></a>
         <a
           id="linkedin"
           href="https://www.linkedin.com/in/hannah-bethhannah-becker/"
+          target="_blank"
           ><i class="fab fa-linkedin"></i
         ></a>
         <a
           id="stack-overflow"
           href="https://stackoverflow.com/users/15136994/hannah-beth-hannah-becker"
+          target="_blank"
           ><i class="fab fa-stack-overflow"></i
         ></a>
-        <a id="instagram" href="https://www.instagram.com/hannahbethification/"
+        <a
+          id="instagram"
+          href="https://www.instagram.com/hannahbethification/"
+          target="_blank"
           ><i class="fab fa-instagram"></i
         ></a>
       </div>
     </footer>
   </body>
-  <script src="script.js"></script>
 </html>
