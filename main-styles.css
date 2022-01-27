@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Ubuntu", sans-serif;
   background-color: #fdf6ff;
   margin: 0;
 }
@@ -19,7 +19,7 @@ body {
 
 #links {
   text-decoration: none;
-  font-family: "Twinkle Star", cursive;
+  font-family: "Ubuntu", sans-serif;
   color: #f6543c;
   font-size: 20px;
 }
@@ -28,7 +28,10 @@ nav.navigation-bar {
   display: none;
 }
 
+/*  */
 /* Homepage Buttons */
+/*  */
+
 button {
   display: inline-block;
   outline: 0;
@@ -144,23 +147,27 @@ div.menu-icon {
   align-items: center;
 } */
 
-.footer {
+/*  */
+/* Homepage Footer */
+/*  */
+
+.homepage-footer {
   text-align: center;
-  font-size: 14px;
-  font-family: "Twinkle Star", cursive;
+  font-size: 12px;
+  font-family: "Ubuntu", sans-serif;
   font-weight: normal;
   line-height: 1.5;
   align-items: center;
 }
 
-.social-links {
+.home-social-links {
   text-align: center;
   font-size: 30px;
   font-weight: 900;
   align-items: center;
 }
 #github {
-  color: #161b22;
+  color: #7a007a;
 }
 #linkedin {
   color: #0966c2;
@@ -209,8 +216,8 @@ div.menu-icon {
   }
 }
 
-/* Min-Width 550px for Home Content */
-@media (min-width: 550px) {
+/* Min-Width 550px and Min-Width 900px for Home Content */
+@media (min-width: 550px) and (min-width: 900px) {
   #home-content {
     height: 30vh;
     width: min-content;
@@ -222,13 +229,22 @@ div.menu-icon {
   #home-content h1 {
     position: unset;
     width: auto;
-    margin-left: 36px;
-    margin-right: 36px;
     line-height: normal;
+    margin-left: 40px;
+    margin-right: 58px;
+    margin-top: -10px;
+  }
+  #home-summary-text h2 {
+    margin-left: 40px;
+    margin-right: 58px;
+    margin-top: 14px;
   }
   #home-summary-text {
     justify-content: flex-start;
     margin: initial;
+    margin-left: 40px;
+    margin-right: 58px;
+    margin-top: -10px;
     margin-bottom: 40px;
     max-height: unset;
     text-align: center;
