@@ -1,4 +1,4 @@
-// Typewriter Effect Inspired by: (https://www.youtube.com/watch?v=POX3dT-pB4E) //
+// Typewriter Effect (Followed Instructions by: (https://www.youtube.com/watch?v=POX3dT-pB4E) //
 
 const TypeWriter = function(txtElement, words, wait = 3000) {
     this.txtElement = txtElement;

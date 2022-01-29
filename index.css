@@ -24,12 +24,21 @@ body {
 #links {
   text-decoration: none;
   font-family: "Ubuntu", sans-serif;
-  color: #f6543c;
+  color: #438dff;
   font-size: 20px;
+  border-radius: 15px;
+  padding: 8px;
+  transform: scale(1.01);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 2px 7px,
+    rgb(64, 205, 71) -2px -2px 0px 2px, rgb(246, 84, 174) 0px 0px 0px 4px;
 }
 #links:hover {
   transform: scale(1.01);
-  color: #438dff;
+  color: rgb(0, 0, 0);
+  border-radius: 15px;
+  box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px,
+    rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+  transition: all 0.2s;
 }
 
 nav.navigation-bar {
