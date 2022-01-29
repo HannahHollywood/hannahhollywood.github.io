@@ -1,3 +1,29 @@
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #fdf6ff;
+}
+
+.background-image {
+  position: relative;
+}
+.background-image::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  background-image: url(images/office-desk.jpeg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+.entire-content {
+  position: relative;
+}
+
 /*  */
 /* Buttons */
 /*  */
@@ -18,4 +44,58 @@ button {
     rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
   transition: all 0.2s;
   font-size: 20px;
+}
+
+/*  */
+/* Navigation Bar */
+/*  */
+
+ul {
+  list-style-type: none;
+}
+
+.left-header-links {
+  margin: auto;
+  height: 20vh;
+  justify-content: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 15vh;
+}
+
+#links {
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+  color: #438dff;
+  font-size: 20px;
+
+  border-radius: 15px;
+  padding: 8px;
+  font-weight: 600;
+  box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px,
+    rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+  transition: all 0.2s;
+}
+#links:hover {
+  transform: scale(1.01);
+  color: rgb(0, 0, 0);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 2px 7px,
+    rgb(64, 205, 71) -2px -2px 0px 2px, rgb(246, 84, 174) 0px 0px 0px 4px;
+}
+
+nav.navigation-bar {
+  display: none;
+}
+
+#my-photo {
+  width: 4rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+#my-photo:hover {
+  box-shadow: rgb(246, 84, 174) -2px -2px 0px 2px,
+    rgb(255, 198, 0) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
 }

@@ -2,29 +2,67 @@
 <html lang="en">
   <head>
     <meta charset="uft-8" />
-    <title>Contact Me!</title>
-    <meta name="description" content="Contact Me!" />
+    <title>Contact Hannah</title>
+    <meta name="description" content="Contact Hannah" />
     <meta name="author" content="Hannah-Beth" />
     <link rel="stylesheet" href="contact.css" />
+    <!-- FONTS: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- LOGOS: -->
+    <script
+      src="https://kit.fontawesome.com/3f058f03c7.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-</html>
 
-<body>
-  <h1>Contact Me!</h1>
-</body>
-<form
-  class="contact-form"
-  action="https://formspree.io/f/mqknewqj"
-  method="POST"
->
-  <label>
-    Your email:
-    <input type="email" name="_replyto" />
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+  <body>
+    <div class="background-image">
+      <div class="entire-content">
+        <nav class="burger-nav">
+          <ul class="left-header-links">
+            <li><a id="links" href="about.html">About</a></li>
+            <li><a id="links" href="projects.html">My Projects</a></li>
+            <li><a id="links" href="contact.html">Contact Me</a></li>
+            <li>
+              <a href="index.html">
+                <img
+                  id="my-photo"
+                  src="images/portfolio-photo.jpg"
+                  alt="Picure of Hannah"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="contact-me-container">
+          <h1>Contact Me!</h1>
+          <form
+            class="contact-form"
+            action="https://formspree.io/f/mqknewqj"
+            method="POST"
+          >
+            <label>
+              Your email:
+              <input type="email" name="_replyto" />
+            </label>
+            <label>
+              Your message:
+              <textarea name="message"></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
