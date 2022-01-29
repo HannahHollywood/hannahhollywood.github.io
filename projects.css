@@ -7,6 +7,27 @@ body {
   background-color: #fdf6ff;
 }
 
+.background-image {
+  position: relative;
+}
+.background-image::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.1;
+  background-image: url(images/office-desk.jpeg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+.entire-content {
+  position: relative;
+}
+
 /*  */
 /* Navigation Bar */
 /*  */
@@ -59,4 +80,101 @@ nav.navigation-bar {
 #my-photo:hover {
   box-shadow: rgb(246, 84, 174) -2px -2px 0px 2px,
     rgb(255, 198, 0) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+}
+
+/*  */
+/* Projects Boxes */
+/*  */
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+footer {
+  text-align: center;
+  font-size: 23px;
+  padding: 4px;
+}
+
+h1,
+h3,
+a:hover {
+  color: rgb(180, 57, 92);
+}
+
+/* Special Properties of Top Navigation Bar */
+
+#magnifying-glass {
+  width: 1.4rem;
+  height: 1.4rem;
+}
+
+.header-left {
+  float: left;
+  font-size: 22px;
+  margin: -16px 12px -9px 11px;
+}
+
+.header-right {
+  float: right;
+  padding: 42px 6px;
+  margin: -23px 0px -9px 11px;
+  font-size: 30px;
+}
+
+/* Special Properties of Cohort Blocks */
+
+.projects-header {
+  text-align: center;
+  margin: 20px;
+  padding-top: 1px;
+  font-size: 20px;
+  font-family: "Twinkle Star", cursive;
+  color: #438dff;
+}
+
+.main-content {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.box-rows {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 8px;
+}
+
+.profiles {
+  display: inline-block;
+  box-sizing: content-box;
+  width: 30rem;
+  height: 480px;
+  background-color: white;
+  border: 10px;
+  padding: 15px;
+  margin: 8px;
+}
+
+.pet-images {
+  width: 30rem;
+  height: 20rem;
+  margin: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.bio {
+  font-size: 17px;
+}
+
+.they-code {
+  color: rgba(167, 167, 167, 0.968);
 }
