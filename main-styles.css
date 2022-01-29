@@ -27,36 +27,13 @@ body {
   color: #f6543c;
   font-size: 20px;
 }
-
-nav.navigation-bar {
-  display: none;
-}
-
-/*  */
-/* Homepage Buttons */
-/*  */
-
-button {
-  display: inline-block;
-  outline: 0;
-  border: 0;
-  cursor: pointer;
-  position: relative;
-  color: #000;
-  background: #fff;
-  line-height: 30px;
-  border-radius: 15px;
-  padding: 20px;
-  font-weight: 600;
-  box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px,
-    rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
-  transition: all 0.2s;
-  font-size: 20px;
-}
-
 #links:hover {
   transform: scale(1.01);
   color: #438dff;
+}
+
+nav.navigation-bar {
+  display: none;
 }
 
 /*  */
