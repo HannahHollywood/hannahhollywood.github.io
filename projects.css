@@ -1,6 +1,5 @@
 /* * {
   border: 1px solid black;
-  color: #40CD47 (green)
 } */
 
 body {
@@ -163,4 +162,36 @@ a:hover {
 .tech-stack {
   color: #438dff;
   font-family: "Twinkle Star", cursive;
+}
+
+/*  */
+/* FOOTER */
+/*  */
+
+.footer {
+  text-align: center;
+  font-size: 12px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+  align-items: center;
+}
+
+.social-links {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  align-items: center;
+}
+#github {
+  color: #7a007a;
+}
+#linkedin {
+  color: #0966c2;
+}
+#stack-overflow {
+  color: #f48024;
+}
+#instagram {
+  color: #e01038;
 }

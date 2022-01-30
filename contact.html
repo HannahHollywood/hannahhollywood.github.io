@@ -26,7 +26,7 @@
 
   <body>
     <div class="background-image">
-      <div class="entire-content">
+      <main class="entire-content">
         <nav class="burger-nav">
           <ul class="left-header-links">
             <li><a id="links" href="about.html">About</a></li>
@@ -43,26 +43,91 @@
           </ul>
         </nav>
 
+        <div class="container">
+          <div class="left"></div>
+          <div class="right">
+            <div class="content">
+              <h1>Interested in Me?</h1>
+              <p>
+                I've been really lucky to get into the She Codes program this
+                year. I hope this portfolio gives you some insight into my work
+                and potential *growing* skills. <br />
+                <br />
+                If you'd like to see my full work-history feel free to access my
+                CV below ↓
+              </p>
+              <a
+                href="images/Resume for Hannah-Beth H-B (2022).pdf"
+                download="Resume for Hannah-Beth H-B (2022).pdf"
+                class="btn"
+                >Download CV</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <h2 class="dotted-line"></h2>
+
         <div class="contact-me-container">
-          <h1>Contact Me!</h1>
+          <h1>
+            Got Feedback? <br />
+            <span id="contact-me">Get in Touch!</span>
+          </h1>
           <form
             class="contact-form"
             action="https://formspree.io/f/mqknewqj"
             method="POST"
           >
-            <label>
-              Your email:
-              <input type="email" name="_replyto" />
-            </label>
-            <label>
-              Your message:
-              <textarea name="message"></textarea>
-            </label>
-            <!-- your other form fields go here -->
-            <button type="submit">Send</button>
+            <div class="form-item">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" />
+            </div>
+            <div class="form-item">
+              <label for="mail">Email:</label>
+              <input type="email" id="mail" name="email" />
+            </div>
+
+            <div class="form-item">
+              <label for="message">Write me a Message:</label>
+              <textarea id="message" name="message"></textarea>
+            </div>
+
+            <div class="form-item">
+              <button type="submit">Send!</button>
+            </div>
           </form>
         </div>
-      </div>
+
+        <footer class="footer">
+          Like what you see? Follow me....
+          <div class="social-links">
+            <a
+              id="github"
+              href="https://github.com/HannahHollywood"
+              target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              id="linkedin"
+              href="https://www.linkedin.com/in/hannah-bethhannah-becker/"
+              target="_blank"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a
+              id="stack-overflow"
+              href="https://stackoverflow.com/users/15136994/hannah-beth-hannah-becker"
+              target="_blank"
+              ><i class="fab fa-stack-overflow"></i
+            ></a>
+            <a
+              id="instagram"
+              href="https://www.instagram.com/hannahbethification/"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+        </footer>
+      </main>
     </div>
   </body>
 </html>
