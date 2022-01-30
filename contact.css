@@ -40,20 +40,18 @@ ul {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  height: 15vh;
+  height: 13vh;
 }
 
 #links {
   text-decoration: none;
   font-family: "Ubuntu", sans-serif;
   color: #438dff;
-  font-size: 20px;
+  font-size: 25px;
 
   border-radius: 15px;
   padding: 8px;
   font-weight: 600;
-  box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px,
-    rgb(246, 84, 174) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
   transition: all 0.2s;
 }
 #links:hover {
@@ -127,6 +125,11 @@ section {
   /* For overlap: */
   margin-left: -85px;
 }
+.right:hover {
+  transform: translateY(-10px) rotate(1deg);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 2px 7px,
+    rgb(64, 205, 71) -2px -2px 0px 2px, rgb(246, 84, 174) 0px 0px 0px 4px;
+}
 .right h1 {
   color: #438dff;
   font-size: 40px;
@@ -146,10 +149,8 @@ section {
   display: inline-block;
   letter-spacing: 2px;
 }
-#contact-me {
+.content span {
   font-family: "Twinkle Star", cursive;
-  color: #f6543c;
-  font-size: 30px;
 }
 a.btn {
   border-style: dashed;
@@ -213,12 +214,23 @@ a.btn {
   padding: 15px 60px;
   margin-bottom: 30px;
 }
+.contact-me-container:hover {
+  transform: translateY(-10px) rotate(-1deg);
+  box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px,
+    rgba(0, 0, 0, 0.05) 0px 0px 2px 7px, rgb(246, 84, 174) 0px 0px 0px 4px;
+}
 
 .contact-me-container h1 {
   color: #438dff;
   text-align: center;
   margin-top: 2px;
   padding: 0%;
+}
+
+#contact-me {
+  font-family: "Twinkle Star", cursive;
+  color: #f6543c;
+  font-size: 30px;
 }
 
 form {
