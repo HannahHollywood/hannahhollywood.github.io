@@ -112,7 +112,7 @@ nav.navigation-bar {
 }
 .intro-text:hover {
   cursor: pointer;
-  transform: translateY(-10px) rotate(-1deg);
+  transform: translateY(10px) rotate(-1deg);
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 2px 7px,
     rgb(64, 205, 71) -2px -2px 0px 2px, rgb(246, 84, 174) 0px 0px 0px 4px;
 }
@@ -201,9 +201,16 @@ section {
 .bio-text {
   display: inline-block;
   margin-top: -18px;
+  font-size: 18px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
+  .intro-text {
+    margin-bottom: 5rem;
+  }
+  #fun-photo {
+    margin: auto;
+  }
   .columns-container {
     flex-direction: column;
     width: 100%;
@@ -212,11 +219,14 @@ section {
   .column-1 {
     width: 100%;
     height: 400px;
+    margin-left: -90px;
   }
   .column-2 {
     width: 80%;
     margin: 0;
-    margin-top: -100px;
+    margin-left: -10rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -228,13 +238,13 @@ section {
 
   position: relative;
   width: 483px;
-  height: 169px;
+  height: 226px;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
-  margin-top: -30px;
+  margin-top: -52px;
   margin-bottom: 30px;
 
   border-top-left-radius: 37px 140px;
@@ -253,7 +263,7 @@ section {
 }
 .conclusion:hover {
   cursor: pointer;
-  transform: translateY(10px) rotate(-1deg);
+  transform: translateY(-10px) rotate(-1deg);
   box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px,
     rgba(0, 0, 0, 0.05) 0px 0px 2px 7px, rgb(246, 84, 174) 0px 0px 0px 4px;
 }
