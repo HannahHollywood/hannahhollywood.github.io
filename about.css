@@ -90,7 +90,7 @@ nav.navigation-bar {
 /*  */
 /* Intro Text */
 
-.intro-text {
+/* .intro-text {
   text-align: center;
   align-items: center;
 
@@ -127,53 +127,28 @@ nav.navigation-bar {
   margin: auto;
   width: max-content;
   padding: 0;
-}
+} */
 
 /*  */
 /* About Me Container*/
 
-section {
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .columns-container {
-  width: 90%;
-  max-width: 1000px;
-  margin: 0 auto;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: center; 
   justify-content: center;
-  margin-bottom: 30px;
-}
-.columns-container:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.column-1 {
-  margin-top: -60px;
-  width: 44%;
-  height: 557px;
-  background: no-repeat center / cover;
-  border-radius: 8px;
 }
 
 .column-2 {
-  width: 80%;
+  width: 60%;
   min-height: 400px;
-  /* /* display: flex; */
+  display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   padding: 30px;
   border-radius: 8px;
   color: #000000;
-  /* For overlap: */
-  margin-left: -85px;
 }
 
 .column-2 h1 {
@@ -186,7 +161,7 @@ section {
 }
 .bio-text {
   text-align: center;
-  width: 680px;
+  width: 100%;
 }
 
 #fun-photo {
@@ -194,11 +169,8 @@ section {
   flex-direction: column;
   justify-content: center;
   border-radius: 50%;
-  width: max-content;
-  height: 425px;
+  height: 400px;
   background: no-repeat center / cover;
-  margin-right: 5pc;
-  margin-top: 6pc;
 }
 #fun-photo:hover {
   box-shadow: rgb(246, 84, 174) -2px -2px 0px 2px,
@@ -211,7 +183,7 @@ section {
   font-size: 18px;
 }
 
-@media only screen and (max-width: 1000px) {
+/* @media only screen and (max-width: 1000px) {
   .intro-text {
     margin-bottom: 5rem;
   }
@@ -235,13 +207,13 @@ section {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
-}
+} */
 
 /* CONCLUSION */
 
 .conclusion {
   text-align: center;
-  align-items: center;
+  display: flex;
 
   position: relative;
   width: 483px;
@@ -251,7 +223,7 @@ section {
   left: 0;
   right: 0;
   margin: auto;
-  margin-top: -52px;
+  margin-top: 30px;
   margin-bottom: 30px;
   border-radius: 12%;
 
@@ -275,11 +247,6 @@ section {
   transform: scale(1.01);
   box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px,
     rgba(0, 0, 0, 0.05) 0px 0px 2px 7px, rgb(246, 84, 174) 0px 0px 0px 4px;
-}
-#conl-text {
-  margin: auto;
-  width: max-content;
-  padding: 0;
 }
 
 /*  */
