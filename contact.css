@@ -48,7 +48,7 @@ ul {
   font-family: "Ubuntu", sans-serif;
   color: #438dff;
   font-size: 25px;
-
+  box-shadow: rgb(64, 205, 71) -2px -2px 0px 2px;
   border-radius: 15px;
   padding: 8px;
   font-weight: 600;
@@ -70,6 +70,7 @@ nav.navigation-bar {
   object-fit: cover;
   object-position: center;
   border-radius: 50%;
+  box-shadow: rgb(246, 84, 174) -2px -2px 0px 2px;
 }
 #my-photo:hover {
   box-shadow: rgb(246, 84, 174) -2px -2px 0px 2px,
