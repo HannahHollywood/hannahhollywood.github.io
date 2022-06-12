@@ -186,7 +186,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-radius: 50% 20% / 10% 40%;
+  border-radius: 50%;
   width: max-content;
   height: 425px;
   background: no-repeat center / cover;
