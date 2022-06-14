@@ -65,6 +65,10 @@ ul {
     rgb(64, 205, 71) -2px -2px 0px 2px, rgb(246, 84, 174) 0px 0px 0px 4px;
 }
 
+a {
+  text-decoration: none;
+}
+
 nav.navigation-bar {
   display: none;
 }
@@ -138,6 +142,7 @@ a:hover {
 .projects {
   display: inline-block;
   box-sizing: content-box;
+  text-align: center;
   width: 30rem;
   height: 480px;
   background-color: white;
