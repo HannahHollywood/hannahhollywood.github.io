@@ -54,16 +54,16 @@ ul {
 }
 
 header {
-  padding-top: 1rem;
-  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
   width: 100%;
 }
 
-.navigation-bar-container {
+
+.burger-nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
+  height: 90px;
 }
 
 .left-header-links {
@@ -116,6 +116,10 @@ header {
 
 /* Media query for smaller screens (e.g., phones) */
 @media only screen and (max-width: 768px) {
+  .burger-nav {
+    height: 60px;
+  }
+
   .left-header-links li {
     margin-right: 1rem;
   }
@@ -370,6 +374,23 @@ form {
 
 .form-item button {
   width: 100px;
+}
+
+/* Button */
+button {
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  position: relative;
+  color: #000;
+  background: #fff;
+  line-height: 30px;
+  border-radius: 15px;
+  padding: 20px;
+  font-weight: 600;
+  transition: all 0.2s;
+  font-size: 20px;
 }
 
 /*  */
