@@ -64,3 +64,11 @@ function init() {
   // Init TypeWriter
   new TypeWriter(txtElement, words, wait);
 }
+
+document.querySelector('.scroll-down-arrow').addEventListener('click', function() {
+    window.scrollBy({
+      top: window.innerHeight,
+      behavior: 'smooth'
+    });
+  });
+  

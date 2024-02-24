@@ -30,39 +30,52 @@ body {
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding-bottom: 0.5rem;
+  width: 100%;
+}
+
+.burger-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
 }
 
 .left-header-links {
-  margin: auto;
-  height: 20vh;
-  justify-content: left;
   display: flex;
-  flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  height: 13vh;
+  justify-content: center;
+}
+
+.left-header-links li {
+  margin-right: 2vw;
+}
+
+.left-header-links li:last-child {
+  margin-right: 0;
 }
 
 #links {
   text-decoration: none;
   font-family: "Ubuntu", sans-serif;
   color: #438dff;
-  font-size: 25px;
-  box-shadow: rgb(64, 205, 71) -2px -2px 0px 2px;
   border-radius: 15px;
-  padding: 8px;
   font-weight: 600;
   transition: all 0.2s;
+  box-shadow: rgb(64, 205, 71) -2px -2px 0px 2px;
+  font-size: 25px;
+  padding: 8px;
 }
 #links:hover {
   transform: scale(1.01);
   color: rgb(0, 0, 0);
   box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 2px 7px,
     rgb(64, 205, 71) -2px -2px 0px 2px, rgb(246, 84, 174) 0px 0px 0px 4px;
-}
-
-nav.navigation-bar {
-  display: none;
 }
 
 #my-photo {
@@ -75,6 +88,43 @@ nav.navigation-bar {
 #my-photo:hover {
   box-shadow: rgb(246, 84, 174) -2px -2px 0px 2px,
     rgb(255, 198, 0) 0px 0px 0px 4px, rgba(0, 0, 0, 0.05) 0px 0px 2px 7px;
+}
+
+/*  */
+/* NAV BAR MEDIA QUERIES */
+/*  */
+
+/* Media query for smaller screens (e.g., phones) */
+@media only screen and (max-width: 768px) {
+  .burger-nav {
+    height: 60px;
+  }
+
+  .left-header-links li {
+    margin-right: 1rem;
+  }
+  #links {
+    font-size: 20px;
+    margin-right: 0.5rem;
+  }
+  #my-photo {
+    width: 3rem;
+  }
+}
+
+/* Media query for even smaller screens (e.g., small phones) */
+@media only screen and (max-width: 480px) {
+  .left-header-links li {
+    margin-right: 0.5rem;
+  }
+  #links {
+    font-size: 16px;
+    padding: 6px;
+    margin-right: 0.25rem;
+  }
+  #my-photo {
+    width: 2.5rem;
+  }
 }
 
 /*  */
@@ -127,9 +177,10 @@ section {
   margin-left: -85px;
 }
 .right:hover {
-  transform: translateY(-10px) rotate(1deg);
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 2px 7px,
-    rgb(64, 205, 71) -2px -2px 0px 2px, rgb(246, 84, 174) 0px 0px 0px 4px;
+  cursor: pointer;
+  transform: scale(1.01);
+  box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px,
+    rgba(0, 0, 0, 0.05) 0px 0px 2px 7px, rgb(246, 84, 174) 0px 0px 0px 4px;
 }
 .right h1 {
   color: #438dff;
@@ -216,7 +267,8 @@ a.btn {
   margin-bottom: 30px;
 }
 .contact-me-container:hover {
-  transform: translateY(-10px) rotate(-1deg);
+  cursor: pointer;
+  transform: scale(1.01);
   box-shadow: rgb(255, 198, 0) -2px -2px 0px 2px,
     rgba(0, 0, 0, 0.05) 0px 0px 2px 7px, rgb(246, 84, 174) 0px 0px 0px 4px;
 }
