@@ -58,7 +58,6 @@ header {
   width: 100%;
 }
 
-
 .burger-nav {
   display: flex;
   justify-content: center;
@@ -138,9 +137,9 @@ header {
     margin-right: 0.5rem;
   }
   #links {
-    font-size: 16px;
+    font-size: 12px;
     padding: 6px;
-    margin-right: 0.25rem;
+    margin-right: 0.5rem;
   }
   #mini-photo {
     width: 2.5rem;
